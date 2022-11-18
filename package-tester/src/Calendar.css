@@ -1,28 +1,62 @@
-.Calender {
-    text-align: center;
+.Calendar {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+.Calendar .Container {
+  height: auto;
+  pointer-events: none;
+
+  background-color: #6b6b6b;
+  border-radius: 10px;
 }
 
-.Calender-container {
-    height: 40vmin;
-    pointer-events: none;
+.Calendar-header {
+  padding: 10px;
+  text-align: left;
+  color: #ffffff;
+}
+.Calendar-header .year {
+  font-size:20px;
+}
+.Calendar-header .date {
+  font-size:40px;
 }
 
-.Calender-box {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.Calendar-box {
+  height: auto;
+  pointer-events: none;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.Calendar-month-select {
+  width: 95%;
+  padding: 5px;
+}
+.Calendar-month-select .bnt {
+  background-color: #9b1818;
+  border: 0px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.Calendar-month-select-btl {
+  float: left;
+}
+.Calendar-month-select-btr {
+  float: right;
 }
 
 
 
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
 
 .month {
   padding: 70px 25px;
@@ -31,9 +65,7 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
 }
 
-.style {
-    font-size:18px;
-}
+
 .month ul {
   margin: 0;
   padding: 0;
